@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1647819667 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\bubblesort.c
+	<stdio.h>
+	<stdlib.h>
+	"Algoritmos.h"
+
+1647819376 c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\bubblesort.h
+	<stdio.h>
+	<stdlib.h>
+
+1647819282 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"BubbleSort.h"
+
+1647819941 c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\algoritmos.h
+
+1647819681 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\insertionsort.c
+	<stdio.h>
+	<stdlib.h>
+	"Algoritmos.h"
+
