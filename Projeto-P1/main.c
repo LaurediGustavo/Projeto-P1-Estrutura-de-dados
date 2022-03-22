@@ -5,7 +5,7 @@
 int main(){
     int v[4] = {4, 3, 2, 1};
 
-    ordenaShellSort(v, 4);
+    ordenaTimSort(v, 4);
 
     for(int i = 0; i < 4; i++) {
         printf("%d", v[i]);
