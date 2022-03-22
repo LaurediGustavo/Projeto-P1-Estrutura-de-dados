@@ -8,14 +8,34 @@
 	<stdio.h>
 	<stdlib.h>
 
-1647819282 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\main.c
+1647949270 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\main.c
 	<stdio.h>
 	<stdlib.h>
-	"BubbleSort.h"
+	"Algoritmos.h"
 
-1647819941 c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\algoritmos.h
+1647949558 c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\algoritmos.h
 
 1647819681 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\insertionsort.c
+	<stdio.h>
+	<stdlib.h>
+	"Algoritmos.h"
+
+1647819937 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\selectionsort.c
+	<stdio.h>
+	<stdlib.h>
+	"Algoritmos.h"
+
+1647900451 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\quicksort.c
+	<stdio.h>
+	<stdlib.h>
+	"Algoritmos.h"
+
+1647900657 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\coutingsort.c
+	<stdio.h>
+	<stdlib.h>
+	"Algoritmos.h"
+
+1647948853 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\beadsort.c
 	<stdio.h>
 	<stdlib.h>
 	"Algoritmos.h"
