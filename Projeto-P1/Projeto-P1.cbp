@@ -31,11 +31,29 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Algoritmos.h" />
+		<Unit filename="BeadSort.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="BubbleSort.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="BubbleSort.h" />
+		<Unit filename="CoutingSort.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="InsertionSort.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="QuickSort.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="RadixSort.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SelectionSort.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ShellSort.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="main.c">
