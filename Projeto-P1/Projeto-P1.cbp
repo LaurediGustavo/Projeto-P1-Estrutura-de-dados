@@ -41,7 +41,13 @@
 		<Unit filename="CoutingSort.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="HeapSort.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="InsertionSort.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MergeSort.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="QuickSort.c">
@@ -54,6 +60,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="ShellSort.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="TimSort.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="main.c">
