@@ -14,10 +14,11 @@ void preencherVetor(int *vetor, int tamanho);
 void embaralhaVetor(int *vetor, int tamanho);
 void testarAlgoritmo(int tamanho);
 
+
 int main(){
     srand((unsigned)time(NULL));
 
-    testarAlgoritmo(MIL);
+    testarAlgoritmo(CEM_MIL);
 
     return 0;
 }
@@ -38,12 +39,22 @@ void embaralhaVetor(int *vetor, int tamanho) {
 }
 
 void testarAlgoritmo(int tamanho) {
+    struct timeval Tempo_antes, Tempo_depois;
+    double deltaT;
+
     int *vetor = malloc(sizeof(int) * tamanho);
 
     for(int i = 0; i <= 10; i++) {
         preencherVetor(vetor, tamanho);
         embaralhaVetor(vetor, tamanho);
-        ordenaBubbleSort(vetor, tamanho);
+
+        gettimeofday(&Tempo_antes, NULL);
+        ordenaMergeSort(vetor, tamanho);
+        gettimeofday(&Tempo_depois, NULL);
+
+        deltaT = (Tempo_depois.tv_sec + Tempo_depois.tv_usec / 1000000.0) -
+                 (Tempo_antes.tv_sec + Tempo_antes.tv_usec / 1000000.0);
+        printf("\nO tempo de execução: %f\n", deltaT);
     }
 
     free(vetor);
