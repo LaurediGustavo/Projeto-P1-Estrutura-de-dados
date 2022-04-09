@@ -8,10 +8,10 @@
 	<stdio.h>
 	<stdlib.h>
 
-1648929607 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\main.c
+1649509126 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\main.c
 	<stdio.h>
 	<stdlib.h>
-	<time.h>
+	<sys/time.h>
 	"Algoritmos.h"
 
 1648244449 c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\algoritmos.h
@@ -26,7 +26,7 @@
 	<stdlib.h>
 	"Algoritmos.h"
 
-1648244449 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\quicksort.c
+1649510555 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\quicksort.c
 	<stdio.h>
 	<stdlib.h>
 	"Algoritmos.h"
@@ -41,7 +41,7 @@
 	<stdlib.h>
 	"Algoritmos.h"
 
-1648244449 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\radixsort.c
+1649510129 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\radixsort.c
 	<stdio.h>
 	<stdlib.h>
 	"Algoritmos.h"

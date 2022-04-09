@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include <sys/time.h>
 #include "Algoritmos.h"
 
 #define MIL 1000
@@ -9,28 +9,35 @@
 #define VINTE_MIL 20000
 #define CINQUENTA_MIL 50000
 #define CEM_MIL 100000
+#define UM_MILHAO 1000000
 
 int menu();
 int submenu();
+int selecionaQuantidade(int qtde);
 void preencherVetorAsc(int *vetor, int tamanho);
 void preencherVetorDesc(int *vetor, int tamanho);
 void embaralhaVetor(int *vetor, int tamanho);
-void testarAlgoritmo(int tamanho, int algoritmo, int *vetor);
-int selecionaQuantidade(int qtde);
+double mediaDeTempo(int tamanho, int algoritmo, int *vetor);
+double calcularMediaDeTempo(double *tempo);
 double selecionaAlgortimo(int algoritmo, int *vetor, int tamanho);
-void testeMelhorPiorCaso(int algoritmo, int tamanho, int *vetor);
+double melhorCaso(int algoritmo, int tamanho, int *vetor);
+double piorCaso(int algoritmo, int tamanho, int *vetor);
+void exibirTempo(double tempo, char texto[]);
 
 int main(){
     srand((unsigned)time(NULL));
 
-    int algoritmo = menu();
-    int qtde = submenu();
-    qtde = selecionaQuantidade(qtde);
+    int algoritmo, tamanho, *vetor;
 
-    int *vetor = malloc(sizeof(int) * qtde);
+    algoritmo = menu();
+    tamanho = submenu();
+    tamanho = selecionaQuantidade(tamanho);
 
-    testarAlgoritmo(qtde, algoritmo, vetor);
-    testeMelhorPiorCaso(algoritmo, qtde, vetor);
+    vetor = malloc(sizeof(int) * tamanho);
+
+    exibirTempo(mediaDeTempo(tamanho, algoritmo, vetor), "media");
+    exibirTempo(melhorCaso(algoritmo, tamanho, vetor), "no melhor");
+    exibirTempo(piorCaso(algoritmo, tamanho, vetor), "no pior");
 
     free(vetor);
     return 0;
@@ -48,48 +55,11 @@ int menu(){
 
 int submenu(){
     int opt2;
-    printf(" \n1 - 1.000 elementos \n2 - 5.000 elementos \n3 - 10.000 elementos \n4 - 20.000 elementos \n5 - 50.000 elementos \n6 - 100.000 elementos");
-    printf("\nInforme quantidade de elementos a serem ordenados:\n");
+    printf(" \n1 - 1.000 elementos \n2 - 5.000 elementos \n3 - 10.000 elementos \n4 - 20.000 elementos \n5 - 50.000 elementos \n6 - 100.000 elementos \n7 - 1.000.000 elementos");
+    printf("\n\nInforme quantidade de elementos a serem ordenados:\n");
     scanf("%d", &opt2);
 
     return opt2;
-}
-
-void preencherVetorAsc(int *vetor, int tamanho) {
-    for(int i = 0; i <= tamanho; i++) {
-        vetor[i] = i;
-    }
-}
-
-void preencherVetorDesc(int *vetor, int tamanho) {
-    int i = 0;
-    for(int j = tamanho; j >= 0; j--) {
-        vetor[i] = j;
-        i++;
-    }
-}
-
-void embaralhaVetor(int *vetor, int tamanho) {
-    for(int i = tamanho; i > 0; i--) {
-        int j = rand() % (i + 1);
-        int tmp = vetor[j];
-        vetor[j] = vetor[i];
-        vetor[i] = tmp;
-    }
-}
-
-void testarAlgoritmo(int tamanho, int algoritmo, int *vetor) {
-    double *tempo = malloc(sizeof(double) * 10);
-
-    for(int i = 0; i <= 10; i++) {
-        preencherVetorAsc(vetor, tamanho);
-        embaralhaVetor(vetor, tamanho);
-
-        double temp = selecionaAlgortimo(algoritmo, vetor, tamanho);
-        tempo[i] = temp;
-    }
-
-    free(tempo);
 }
 
 int selecionaQuantidade(int qtde) {
@@ -117,7 +87,59 @@ int selecionaQuantidade(int qtde) {
         case 6:
             return CEM_MIL;
             break;
+        case 7:
+            return UM_MILHAO;
+            break;
     }
+}
+
+void preencherVetorAsc(int *vetor, int tamanho) {
+    for(int i = 0; i <= tamanho; i++) {
+        vetor[i] = i;
+    }
+}
+
+void preencherVetorDesc(int *vetor, int tamanho) {
+    int i = 0;
+    for(int j = tamanho; j >= 0; j--) {
+        vetor[i] = j;
+        i++;
+    }
+}
+
+void embaralhaVetor(int *vetor, int tamanho) {
+    for(int i = tamanho; i > 0; i--) {
+        int j = rand() % (i + 1);
+        int tmp = vetor[j];
+        vetor[j] = vetor[i];
+        vetor[i] = tmp;
+    }
+}
+
+double mediaDeTempo(int tamanho, int algoritmo, int *vetor) {
+    double *tempo = malloc(sizeof(double) * 10);
+
+    for(int i = 0; i <= 10; i++) {
+        preencherVetorAsc(vetor, tamanho);
+        embaralhaVetor(vetor, tamanho);
+
+        tempo[i] = selecionaAlgortimo(algoritmo, vetor, tamanho);
+    }
+
+    double media = calcularMediaDeTempo(tempo);
+    free(tempo);
+
+    return media;
+}
+
+double calcularMediaDeTempo(double *tempo) {
+    double media;
+
+    for(int i = 0; i <= 10; i++) {
+        media += tempo[i];
+    }
+
+    return media / 10;
 }
 
 double selecionaAlgortimo(int algoritmo, int *vetor, int tamanho) {
@@ -156,7 +178,7 @@ double selecionaAlgortimo(int algoritmo, int *vetor, int tamanho) {
 
         case 6:
             gettimeofday(&Tempo_antes, NULL);
-            ordenaQuickSort(vetor, 0, tamanho);
+            ordenaQuickSort(vetor, 0, tamanho - 1);
             gettimeofday(&Tempo_depois, NULL);
             break;
 
@@ -195,17 +217,16 @@ double selecionaAlgortimo(int algoritmo, int *vetor, int tamanho) {
                  (Tempo_antes.tv_sec + Tempo_antes.tv_usec / 1000000.0);
 }
 
-void testeMelhorPiorCaso(int algoritmo, int tamanho, int *vetor) {
+double melhorCaso(int algoritmo, int tamanho, int *vetor) {
     preencherVetorAsc(vetor, tamanho);
-    double melhorCaso = selecionaAlgortimo(algoritmo, vetor, tamanho);
-
-    preencherVetorDesc(vetor, tamanho);
-    double piorCaso = selecionaAlgortimo(algoritmo, vetor, tamanho);
-
-    exibirMelhorPiorCaso(melhorCaso, piorCaso);
+    return selecionaAlgortimo(algoritmo, vetor, tamanho);
 }
 
-void exibirMelhorPiorCaso(double melhorCaso, double piorCaso) {
-    printf("\nO tempo no melhor caso e: %f\n", melhorCaso);
-    printf("\nO tempo no pior caso e: %f\n", piorCaso);
+double piorCaso(int algoritmo, int tamanho, int *vetor) {
+    preencherVetorDesc(vetor, tamanho);
+    return selecionaAlgortimo(algoritmo, vetor, tamanho);
+}
+
+void exibirTempo(double tempo, char texto[]) {
+    printf("\nO tempo %s caso e: %f\n", texto, tempo);
 }
