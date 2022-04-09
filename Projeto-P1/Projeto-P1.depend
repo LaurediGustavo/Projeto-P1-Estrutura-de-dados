@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1647819667 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\bubblesort.c
+1648244449 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\bubblesort.c
 	<stdio.h>
 	<stdlib.h>
 	"Algoritmos.h"
@@ -8,59 +8,60 @@
 	<stdio.h>
 	<stdlib.h>
 
-1647987731 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\main.c
+1649509126 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<sys/time.h>
+	"Algoritmos.h"
+
+1648244449 c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\algoritmos.h
+
+1648244449 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\insertionsort.c
 	<stdio.h>
 	<stdlib.h>
 	"Algoritmos.h"
 
-1647986728 c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\algoritmos.h
-
-1647819681 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\insertionsort.c
+1648244449 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\selectionsort.c
 	<stdio.h>
 	<stdlib.h>
 	"Algoritmos.h"
 
-1647819937 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\selectionsort.c
+1649510555 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\quicksort.c
 	<stdio.h>
 	<stdlib.h>
 	"Algoritmos.h"
 
-1647900451 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\quicksort.c
+1648244449 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\coutingsort.c
 	<stdio.h>
 	<stdlib.h>
 	"Algoritmos.h"
 
-1647900657 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\coutingsort.c
+1648244449 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\beadsort.c
 	<stdio.h>
 	<stdlib.h>
 	"Algoritmos.h"
 
-1647985196 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\beadsort.c
+1649510129 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\radixsort.c
 	<stdio.h>
 	<stdlib.h>
 	"Algoritmos.h"
 
-1647949476 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\radixsort.c
+1648244449 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\shellsort.c
 	<stdio.h>
 	<stdlib.h>
 	"Algoritmos.h"
 
-1647949672 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\shellsort.c
+1648244449 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\timsort.c
 	<stdio.h>
 	<stdlib.h>
 	"Algoritmos.h"
 
-1647985158 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\timsort.c
+1648244449 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\mergesort.c
 	<stdio.h>
 	<stdlib.h>
 	"Algoritmos.h"
 
-1647985764 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\mergesort.c
-	<stdio.h>
-	<stdlib.h>
-	"Algoritmos.h"
-
-1647986836 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\heapsort.c
+1648244449 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\heapsort.c
 	<stdio.h>
 	<stdlib.h>
 	"Algoritmos.h"

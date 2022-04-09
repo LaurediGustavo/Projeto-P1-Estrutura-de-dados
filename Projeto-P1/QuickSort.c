@@ -2,34 +2,41 @@
 #include <stdlib.h>
 #include "Algoritmos.h"
 
-void ordenaQuickSort(int vect[], int inicio, int fim) {
-    int ini, fi, pivo, aux;
+void ordenaQuickSort(int *vetor, int esquerda, int direita) {
+    int i, j, meio, troca;
+    i = esquerda;
+    j= direita;
+    meio = vetor[(esquerda+direita) / 2];
 
-    if(inicio < fim) {
-        ini = inicio;
-        fi = fim;
-        pivo = inicio;
-
-        while(ini < fi) {
-            while(vect[ini] <= vect[pivo] && ini < fim) {
-                ini++;
-            }
-            while(vect[fi] > vect[pivo]) {
-                fi--;
-            }
-
-            if(ini < fi) {
-                aux = vect[ini];
-                vect[ini] = vect[fi];
-                vect[fi] = aux;
-            }
-
-            aux = vect[pivo];
-            vect[pivo] = vect[fi];
-            vect[fi] = aux;
-
-            ordenaQuickSort(vect, inicio, fi - 1);
-            ordenaQuickSort(vect, fi + 1, fim);
+    while(i <= j)
+    {
+        while(vetor[i] < meio && i < direita)
+        {
+            i++;
         }
+
+        while(vetor[j] > meio && j > esquerda)
+        {
+            j--;
+        }
+
+        if(i <= j)
+        {
+            troca = vetor[i];
+            vetor[i] = vetor[j];
+            vetor[j] = troca;
+            i++;
+            j--;
+        }
+    }
+
+    if(j > esquerda)
+    {
+        ordenaQuickSort(vetor, esquerda, j);
+    }
+
+    if(i < direita)
+    {
+        ordenaQuickSort(vetor, i, direita);
     }
 }
