@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <sys/time.h>
 #include "Algoritmos.h"
+#include "Menu.h"
+#include "VetorUteis.h"
 
 #define MIL 1000
 #define CINCO_MIL 5000
@@ -11,12 +13,7 @@
 #define CEM_MIL 100000
 #define UM_MILHAO 1000000
 
-int menu();
-int submenu();
 int selecionaQuantidade(int qtde);
-void preencherVetorAsc(int *vetor, int tamanho);
-void preencherVetorDesc(int *vetor, int tamanho);
-void embaralhaVetor(int *vetor, int tamanho);
 double mediaDeTempo(int tamanho, int algoritmo, int *vetor);
 double calcularMediaDeTempo(double *tempo);
 double selecionaAlgortimo(int algoritmo, int *vetor, int tamanho);
@@ -33,7 +30,7 @@ int main(){
     tamanho = submenu();
     tamanho = selecionaQuantidade(tamanho);
 
-    vetor = malloc(sizeof(int) * tamanho);
+    vetor = alocarMemoriaInteiro(tamanho);
 
     exibirTempo(mediaDeTempo(tamanho, algoritmo, vetor), "media");
     exibirTempo(melhorCaso(algoritmo, tamanho, vetor), "no melhor");
@@ -41,25 +38,6 @@ int main(){
 
     free(vetor);
     return 0;
-}
-
-int menu(){
-    int opt1;
-    printf("------------DESEMPENHO ALGORITMOS DE ORDENACAO------------\n");
-    printf("\n1-BubbleSort\n2-InsertionSort\n3-SelectionSort\n4-ShellSort\n5-MergeSort\n6-QuickSort\n7-HeapSort\n8-RadixSort\n9-TimSort\n10-BeadSort\n11-CountingSort");
-    printf("\n\nInforme o algoritmo a ser testado:\n");
-    scanf("%d", &opt1);
-
-    return opt1;
-}
-
-int submenu(){
-    int opt2;
-    printf(" \n1 - 1.000 elementos \n2 - 5.000 elementos \n3 - 10.000 elementos \n4 - 20.000 elementos \n5 - 50.000 elementos \n6 - 100.000 elementos \n7 - 1.000.000 elementos");
-    printf("\n\nInforme quantidade de elementos a serem ordenados:\n");
-    scanf("%d", &opt2);
-
-    return opt2;
 }
 
 int selecionaQuantidade(int qtde) {
@@ -87,37 +65,15 @@ int selecionaQuantidade(int qtde) {
         case 6:
             return CEM_MIL;
             break;
+
         case 7:
             return UM_MILHAO;
             break;
     }
 }
 
-void preencherVetorAsc(int *vetor, int tamanho) {
-    for(int i = 0; i <= tamanho; i++) {
-        vetor[i] = i;
-    }
-}
-
-void preencherVetorDesc(int *vetor, int tamanho) {
-    int i = 0;
-    for(int j = tamanho; j >= 0; j--) {
-        vetor[i] = j;
-        i++;
-    }
-}
-
-void embaralhaVetor(int *vetor, int tamanho) {
-    for(int i = tamanho; i > 0; i--) {
-        int j = rand() % (i + 1);
-        int tmp = vetor[j];
-        vetor[j] = vetor[i];
-        vetor[i] = tmp;
-    }
-}
-
 double mediaDeTempo(int tamanho, int algoritmo, int *vetor) {
-    double *tempo = malloc(sizeof(double) * 10);
+    double *tempo = alocarMemoriaDouble(10);
 
     for(int i = 0; i <= 10; i++) {
         preencherVetorAsc(vetor, tamanho);
