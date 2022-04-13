@@ -47,6 +47,10 @@
 		<Unit filename="InsertionSort.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="Menu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Menu.h" />
 		<Unit filename="MergeSort.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -65,6 +69,10 @@
 		<Unit filename="TimSort.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="VetorUteis.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="VetorUteis.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

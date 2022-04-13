@@ -8,11 +8,14 @@
 	<stdio.h>
 	<stdlib.h>
 
-1649509126 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\main.c
+1649887959 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\main.c
 	<stdio.h>
 	<stdlib.h>
 	<sys/time.h>
 	"Algoritmos.h"
+	"Menu.h"
+	"VetorUteis.h"
+	"TempoUteis.h"
 
 1648244449 c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\algoritmos.h
 
@@ -26,7 +29,7 @@
 	<stdlib.h>
 	"Algoritmos.h"
 
-1649510555 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\quicksort.c
+1649510909 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\quicksort.c
 	<stdio.h>
 	<stdlib.h>
 	"Algoritmos.h"
@@ -41,7 +44,7 @@
 	<stdlib.h>
 	"Algoritmos.h"
 
-1649510129 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\radixsort.c
+1649510909 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\radixsort.c
 	<stdio.h>
 	<stdlib.h>
 	"Algoritmos.h"
@@ -65,4 +68,25 @@
 	<stdio.h>
 	<stdlib.h>
 	"Algoritmos.h"
+
+1649886735 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"Menu.h"
+
+1649886715 c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\menu.h
+
+1649887466 c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\vetoruteis.h
+
+1649887428 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\vetoruteis.c
+	<stdio.h>
+	<stdlib.h>
+	"VetorUteis.h"
+
+1649887819 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\tempouteis.c
+	<stdio.h>
+	<stdlib.h>
+	"TempoUteis.h"
+
+1649887803 c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\tempouteis.h
 
