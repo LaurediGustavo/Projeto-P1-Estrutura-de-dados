@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1653088533 source:c:\users\aluno\desktop\rubronegra\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arvoreLLRB.h"
+
+1653088509 c:\users\aluno\desktop\rubronegra\arvorellrb.h
+

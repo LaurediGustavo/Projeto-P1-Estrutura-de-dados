@@ -8,14 +8,13 @@
 	<stdio.h>
 	<stdlib.h>
 
-1649887959 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\main.c
+1649888357 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\main.c
 	<stdio.h>
 	<stdlib.h>
 	<sys/time.h>
 	"Algoritmos.h"
 	"Menu.h"
 	"VetorUteis.h"
-	"TempoUteis.h"
 
 1648244449 c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\algoritmos.h
 
@@ -69,16 +68,16 @@
 	<stdlib.h>
 	"Algoritmos.h"
 
-1649886735 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\menu.c
+1649888357 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\menu.c
 	<stdio.h>
 	<stdlib.h>
 	"Menu.h"
 
-1649886715 c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\menu.h
+1649888357 c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\menu.h
 
-1649887466 c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\vetoruteis.h
+1649888357 c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\vetoruteis.h
 
-1649887428 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\vetoruteis.c
+1649888357 source:c:\users\lauredirigoni\documents\gustavo\estudos\academico\ifsp\3° semestre\estrutura de dados\trabalho 1\projeto-p1-estrutura-de-dados\projeto-p1\vetoruteis.c
 	<stdio.h>
 	<stdlib.h>
 	"VetorUteis.h"
